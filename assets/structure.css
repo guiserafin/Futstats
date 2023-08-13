@@ -1,0 +1,20 @@
+/*
+ * Documento CSS para colocar classes gerais
+ */
+
+
+.d-flex{
+    display: flex;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w80{
+    width: 80%;
+}
