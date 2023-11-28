@@ -1,9 +1,9 @@
 /**
  * Arquivo onde ficarão as funções que trarão as informações da API
- * chave da API = 0d253ebeee1f19abd801d85ffbce3bee0c0d22ea5e6e152e18e780fa48cf5c51
+ * chave da API = 4a7d28e3ff0b8bb527cfd5267e3195b1173342cefeec4ec35d31300116398c48
  */
 
-var apiKey = '0d253ebeee1f19abd801d85ffbce3bee0c0d22ea5e6e152e18e780fa48cf5c51';
+var apiKey = '4a7d28e3ff0b8bb527cfd5267e3195b1173342cefeec4ec35d31300116398c48';
 
 
 //Funcao que mostra os jogos acontecendo ao vivo (aparecerá no Home)
