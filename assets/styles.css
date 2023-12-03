@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
 }
 
 a {
@@ -19,6 +19,7 @@ a.selected {
 }
 
 .cabecalho {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
     height: 100px;
     display: flex;
@@ -235,4 +236,37 @@ a.selected {
   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     transition: 0.4s;
   }
-  */
+  */  
+
+  .corpo-TabelasCampeonatos {
+    background-color: #f4f4f4;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,;
+    margin: 0;
+  }
+  .tabela-dadosCampeonatos {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  .coluna-TabelaCampeonato, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .coluna-TabelaCampeonato{
+    background-color: #ffffff;
+    color: #333333;
+    font-weight: normal;
+  }
+  .linha-TabelaCampeonato:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .sec-tabelas{
+   margin-top:50px;
+  }
