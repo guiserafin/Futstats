@@ -245,28 +245,50 @@ a.selected {
     margin: 0;
   }
   .tabela-dadosCampeonatos {
-    width: 80%;
+    width: auto;
     margin: 20px auto;
     border-collapse: collapse;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 80%;
-    margin: 20px auto;
     border-collapse: collapse;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   .coluna-TabelaCampeonato, td {
     padding: 15px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #ddd;
   }
+  .t-align-left {
+    text-align: left;
+  }
   .coluna-TabelaCampeonato{
-    background-color: #ffffff;
-    color: #333333;
-    font-weight: normal;
+    background-color: rgb(52, 126, 91);
+    color: white;
+    font-weight: normal;  
+  }
+  .coluna-TabelaCampeonato:first-child{
+    width: 2px;
   }
   .linha-TabelaCampeonato:nth-child(even) {
     background-color: #f9f9f9;
+    width: max-content;
+    display: flex;
+  }
+  .sla:hover {
+    background-color: white ;
   }
   .sec-tabelas{
-   margin-top:50px;
+    margin-top: 50px;
   }
+  .stats-1 {
+    background-color: rgb(138, 202, 113);
+  }
+  .stats-2 {
+    background-color: rgb(134, 134, 240);
+  }
+  .stats-3 {
+    background-color: rgb(255, 100, 100);
+  }
+  .stats-0 {
+    background-color: rgb(182, 181, 181);
+  }
+  
