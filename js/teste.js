@@ -10,10 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 const tbody = document.querySelector('#tabela-brasileirao tbody');
                 tableData.forEach((team, index) => {
                     const row = document.createElement('tr');
+                    row.classList.add('sla');
+                    const statsClass = calculateStatsClass(index);
                     console.log(team);
                     row.innerHTML = `
+                        <td class="stats-${statsClass}"> </td>
                         <td>${index + 1}</td>
-                        <td>${team.team_name}</td>
+                        <td class="t-align-left">${team.team_name}</td>
                         <td>${team.overall_league_PTS}</td>
                         <td>${team.overall_league_W}</td>
                         <td>${team.overall_league_D}</td>
@@ -27,5 +30,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Chamada inicial para preencher a tabela
     fetchBrasileiraoTable();
+
+    // Função para calcular a classe com base no índice
+    function calculateStatsClass(index) {
+        if (index + 1 < 5) {
+            return 1;
+        } else if (index + 1 >= 5 && index + 1 <= 6) {
+            return 2;
+        } else if (index + 1 >= 17) {
+            return 3;
+        } else {
+            return 0; // Retorna 0 para outros casos
+        }
+    }
 });
 
