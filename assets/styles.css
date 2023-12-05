@@ -83,6 +83,7 @@ a.selected {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 15px;
 }
 
 .card-jogo .liga {

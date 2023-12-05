@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     const baseUrl = 'https://apiv3.apifootball.com/';
     const apiKey = '4a7d28e3ff0b8bb527cfd5267e3195b1173342cefeec4ec35d31300116398c48';
-    // Função para buscar a tabela do Brasileirão
+
+    // Função para buscar a tabela da Bundesliga
     function fetchBrasileiraoTable() {
-        fetch(`${baseUrl}/?action=get_standings&league_id=99&APIkey=${apiKey}`)
+        fetch(`${baseUrl}/?action=get_standings&league_id=175&APIkey=${apiKey}`)
             .then(response => response.json())
             .then(data => {
                 const tableData = data;
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     row.innerHTML = `
                         <td class="stats-${statsClass}"> </td>
                         <td>${index + 1}</td>
-                        <td class="t-align-left">${team.team_name}</td>
+                        <td class="t-align-left"><img style="width:30px; vertical-align:middle" src="${team.team_badge}"></img>  ${team.team_name}</td>
                         <td>${team.overall_league_PTS}</td>
                         <td>${team.overall_league_W}</td>
                         <td>${team.overall_league_D}</td>
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return 1;
         } else if (index + 1 >= 5 && index + 1 <= 6) {
             return 2;
-        } else if (index + 1 >= 17) {
+        } else if (index + 1 >= 16) {
             return 3;
         } else {
             return 0; // Retorna 0 para outros casos
